@@ -7,7 +7,7 @@
 <body>
 	<div class="container">
 		<h1>Contacto</h1>
-		<form action="" method="post" netlify>
+		<form action="" method="post" data-netlify="true">
 			<label for="name">Nombre:</label>
 			<input type="text" id="name" name="nombre" placeholder="Tu nombre" required>
  			<label for="email">Email:</label>
@@ -16,9 +16,9 @@
 			<textarea id="message" name="mensaje" placeholder="Escribe tu mensaje aquí" required></textarea>
  			<label for="archivo">Archivo:</label>
 			<input type="file" name="archivo">
-			<br> 
-			<div data-netfily-recaptcha="true"></div>
-			
+			<br>
+			<div data-netlify-recaptcha="true"></div>
+			<br>
 			<input type="submit" value="Enviar">
 		</form>
 	</div>
