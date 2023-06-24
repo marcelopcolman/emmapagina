@@ -5,19 +5,12 @@
 	<title>Formulario de Contacto</title>
 	<link rel="stylesheet" type="text/css" href="css/contacto.css">
 
-	<script>
-		function enviarFormulario() {
-			if (document.getElementById('formulario').submit()) {
-				alert("El formulario se envió con éxito");
-			}
-		}
-	</script>
 </head>
 
 <body>
 	<div class="container">
 		<h1>Contacto</h1>
-		<form id="formulario" action="" method="post" onsubmit="enviarFormulario()" data-netlify="true">
+		<form name="contacto" method="post" netlify action="/gracias">
 			<label for="name">Nombre:</label>
 			<input type="text" id="name" name="nombre" placeholder="Tu nombre" required>
 			<label for="email">Email:</label>
