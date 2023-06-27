@@ -17,7 +17,7 @@ section {
 }
 
 .contenedor {
-  display: flex;
+  display: flex; 
 }
 
 .servicios {
@@ -77,4 +77,16 @@ img {
     padding: 10px;
     text-align: center;
   }
+  
+  @media screen and (max-width: 640px) {
+    .contenedor {
+      display:block;
+      width: auto;
+    }
+    a img {
+      width: 30%;
+    }
+
+  }
+ 
   
